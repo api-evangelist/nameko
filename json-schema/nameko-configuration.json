@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/api-evangelist/nameko/json-schema/nameko-configuration.json",
+  "title": "Nameko Service Configuration",
+  "description": "JSON Schema for Nameko microservices framework configuration (config.yml).",
+  "type": "object",
+  "properties": {
+    "AMQP_URI": {
+      "type": "string",
+      "default": "pyamqp://guest:guest@localhost",
+      "description": "AMQP broker connection URI."
+    },
+    "WEB_SERVER_ADDRESS": {
+      "type": "string",
+      "default": "0.0.0.0:8000",
+      "description": "Address for HTTP entrypoints to listen on."
+    },
+    "rpc_exchange": {
+      "type": "string",
+      "default": "nameko-rpc",
+      "description": "Name of the RPC exchange."
+    },
+    "max_workers": {
+      "type": "integer",
+      "default": 10,
+      "description": "Maximum number of concurrent workers per service."
+    },
+    "parent_calls_tracked": {
+      "type": "integer",
+      "default": 10,
+      "description": "Number of parent calls tracked for call ID stacks."
+    },
+    "serializer": {
+      "type": "string",
+      "default": "json",
+      "description": "Default serializer for RPC messages."
+    },
+    "ACCEPT_CONTENT": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["json"],
+      "description": "Accepted content types for deserialization."
+    },
+    "HEARTBEAT": {
+      "type": "integer",
+      "default": 60,
+      "description": "AMQP heartbeat interval in seconds."
+    },
+    "PREFETCH_COUNT": {
+      "type": "integer",
+      "default": 10,
+      "description": "AMQP consumer prefetch count."
+    },
+    "LOGIN_METHOD": {
+      "type": "string",
+      "description": "AMQP login method."
+    },
+    "LOGGING": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "integer", "default": 1 },
+        "handlers": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "class": { "type": "string" },
+              "level": { "type": "string" },
+              "formatter": { "type": "string" }
+            }
+          }
+        },
+        "root": {
+          "type": "object",
+          "properties": {
+            "level": { "type": "string" },
+            "handlers": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      },
+      "description": "Python logging dictConfig configuration."
+    }
+  }
+}
