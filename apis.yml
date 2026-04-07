@@ -9,13 +9,13 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
+  - AMQP
+  - Dependency Injection
+  - Frameworks
   - Microservices
   - Python
-  - AMQP
   - RPC
-  - Dependency Injection
   - Testing
-  - Frameworks
 url: >-
   https://raw.githubusercontent.com/api-evangelist/nameko/refs/heads/main/apis.yml
 created: '2026-03-26'
@@ -32,13 +32,13 @@ apis:
       tested in isolation or integration.
     humanURL: https://github.com/nameko/nameko
     tags:
+      - AMQP
+      - Dependency Injection
+      - Frameworks
       - Microservices
       - Python
-      - AMQP
       - RPC
-      - Dependency Injection
       - Testing
-      - Frameworks
     properties:
       - type: JSONSchema
         url: >-
