@@ -48,11 +48,11 @@ common:
     url: https://github.com/nameko/nameko
   - type: Documentation
     url: https://nameko.readthedocs.io/
-  - type: Getting Started
+  - type: GettingStarted
     url: https://nameko.readthedocs.io/en/stable/getting_started.html
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/nameko
-  - type: GitHub Repository
+  - type: GitHubRepository
     url: https://github.com/nameko/nameko
   - type: PyPI
     url: https://pypi.org/project/nameko/
