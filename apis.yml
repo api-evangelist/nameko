@@ -35,6 +35,14 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nameko.png
 tags:
   - AMQP
   - Dependency Injection
+  - Framework
+  - Microservices
+  - Python
+  - RPC
+  - Testing
+tags_raw:
+  - AMQP
+  - Dependency Injection
   - Frameworks
   - Microservices
   - Python
@@ -56,6 +64,14 @@ apis:
       tested in isolation or integration.
     humanURL: https://github.com/nameko/nameko
     tags:
+      - AMQP
+      - Dependency Injection
+      - Framework
+      - Microservices
+      - Python
+      - RPC
+      - Testing
+    tags_raw:
       - AMQP
       - Dependency Injection
       - Frameworks
